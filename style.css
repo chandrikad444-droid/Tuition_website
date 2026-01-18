@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url("images/hero.jpeg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero-box h1 {
+  font-size: 40px;
+}
+
+.hero-box p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.cta-line {
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(56,189,248,0.8);
+}
+
+.btn-secondary {
+  background: #0f172a;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #020617;
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* SECTION */
+.section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* COURSES */
+.course-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  padding: 30px;
+  background: #f1f5f9;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 40px;
+  color: #0284c7;
+  margin-bottom: 15px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 50px;
+}
+
+.about img {
+  width: 320px;
+  border-radius: 15px;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+}
+
+.about-bullets {
+  margin: 15px 0;
+  list-style: none;
+  text-align: left;
+}
+
+.about-bullets li {
+  margin: 8px 0;
+}
+
+/* CONTACT */
+.contact {
+  background: #0f172a;
+  color: #fff;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-box h1 {
+    font-size: 28px;
+  }
+
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
